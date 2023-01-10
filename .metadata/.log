@@ -724,3 +724,51 @@ java.nio.file.FileSystemException: C:\javawork\JAVA0110: 다른 프로세스가 
 	at org.eclipse.ui.ide.undo.AbstractWorkspaceOperation.execute(AbstractWorkspaceOperation.java:200)
 	at org.eclipse.egit.ui.internal.sharing.SharingWizard$1.run(SharingWizard.java:117)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.core.resources 2 2 2023-01-10 16:35:50.762
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-01-10 16:35:50.762
+!MESSAGE The project description file (.project) for 'JAVA0105' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-01-10 16:35:50.762
+!MESSAGE The project description file (.project) for 'JAVA0109' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-01-10 16:35:50.762
+!MESSAGE The project description file (.project) for 'JAVA0110' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2023-01-10 16:35:50.762
+!MESSAGE The project description file (.project) for 'java230104' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+!SESSION 2023-01-10 16:36:16.316 -----------------------------------------------
+eclipse.buildId=4.15.0.I20200305-0155
+java.version=1.8.0_251
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2023-01-10 16:36:29.304
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\codepc'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2023-01-10 16:38:40.205
+!MESSAGE Could not delete file C:\javawork\JAVA0106\.git\objects\1b\9ebe824943e12047bb9eeb7267ac3c805479e5
+!STACK 0
+java.io.IOException: Could not delete file C:\javawork\JAVA0106\.git\objects\1b\9ebe824943e12047bb9eeb7267ac3c805479e5
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:214)
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:164)
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:166)
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:166)
+	at org.eclipse.egit.ui.internal.repository.tree.command.RemoveCommand.deleteRepositoryContent(RemoveCommand.java:258)
+	at org.eclipse.egit.ui.internal.repository.tree.command.RemoveCommand.access$8(RemoveCommand.java:238)
+	at org.eclipse.egit.ui.internal.repository.tree.command.RemoveCommand$2.runInWorkspace(RemoveCommand.java:180)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: C:\javawork\JAVA0106\.git\objects\1b\9ebe824943e12047bb9eeb7267ac3c805479e5
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:269)
+	at sun.nio.fs.AbstractFileSystemProvider.deleteIfExists(AbstractFileSystemProvider.java:108)
+	at java.nio.file.Files.deleteIfExists(Files.java:1165)
+	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:206)
+	... 8 more
