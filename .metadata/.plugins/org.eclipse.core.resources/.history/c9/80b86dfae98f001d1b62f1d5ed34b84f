@@ -1,0 +1,25 @@
+
+public class quiz_05 {
+
+	public static void main(String[] args) {
+		int[][] arr = new int[4][4];
+		int[] colSum = new int[3];
+		int totalSum = 0;
+		
+		for(int i = 0; i < arr.length - 1; i++) {
+			int rowSum = 0;
+			for(int j = 0; j < arr[i].length - 1; j++) {
+				arr[i][j] = (int)(Math.random() * 10) + 1;
+				rowSum += arr[i][j];
+				colSum[j] += arr[i][j];
+			}
+			arr[i][arr[i].length - 1] = rowSum;
+		}
+		for(int i = 0; i < arr.length - 1; i++) {
+			arr[arr.length - 1][i] = colSum[i];
+			totalSum += colSum[i];
+		}
+		arr[3][3] = totalSum;
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public enum Week {
+	MONDAY,
+	TUESDAY,
+	WEDNSDAY,
+	THURSDAY,
+	FIRDAY,
+	SATURDAY,
+	SUNDAY
+
+}
