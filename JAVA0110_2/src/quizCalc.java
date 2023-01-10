@@ -1,25 +1,15 @@
 
 public class quizCalc {
 	
-	int sum(int ... values){
-		int total = 0;
+	double[] calc(int ... values){
+		double[] calc = new double[2];
 		
 		for(int i = 0; i < values.length; i++) {
-			total += values[i];
+			calc[0] += values[i];
 		}
+		calc[1] = calc[0]/values.length;
 		
-		return total;
+		return calc;
 	}
 	
-	double avg(int ... values) {
-		double average;
-		int total = 0;
-		
-		for(int i = 0; i < values.length; i++) {
-			total += values[i];
-		}
-		average = (double)total/values.length;
-		
-		return average;
-	}
 }

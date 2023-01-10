@@ -772,3 +772,6 @@ Caused by: java.nio.file.AccessDeniedException: C:\javawork\JAVA0106\.git\object
 	at java.nio.file.Files.deleteIfExists(Files.java:1165)
 	at org.eclipse.jgit.util.FileUtils.delete(FileUtils.java:206)
 	... 8 more
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2023-01-10 16:40:09.329
+!MESSAGE close() called when useCnt is already zero for Repository[C:\javawork\JAVA0106\.git]
