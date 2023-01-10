@@ -1,29 +1,33 @@
 
 public class Car {
 	//필드 선언
-	String company = "현대자동차";
-	String model;
-	String color;
-	int maxSpeed;
+	int gas;
 	
-	Car(){
-		this("자가용", "은색", 250);
+	void setGas(int gas) {
+		this.gas = gas;
 	}
 	
-	Car(String model){
-		this(model, "은색", 250);
-		this.model = model;
+	boolean isLeftGas() {
+		if(gas == 0) {
+			System.out.println("gas가 없습니다.");
+			return false;
+		}
+		else {
+			System.out.println("gas가 있습니다.");
+			return true;
+		}
 	}
 	
-	Car(String model, String color){
-		this(model, color, 250);
-		this.model = model;
-		this.color = color;
-	}
-	
-	Car(String model, String color, int maxSpeed){
-		this.model = model;
-		this.color = color;
-		this.maxSpeed = maxSpeed;
+	void run() {
+		while(true) {
+			if(gas > 0) {
+				System.out.println("달립니다.(gas 잔량 : " + gas + ")");
+				gas--;
+			}
+			else {
+				System.out.println("멈춥니다.(gas 잔량 : " + gas + ")");
+				return;		//지금 현재 동작하는 run() 메소드를 종료
+			}
+		}
 	}
 }
