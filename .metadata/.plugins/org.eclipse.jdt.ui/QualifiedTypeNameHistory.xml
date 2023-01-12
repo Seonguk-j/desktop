@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="test"/>
+<fullyQualifiedTypeName name="com.hankook.Tire"/>
+<fullyQualifiedTypeName name="com.kumho.Tire"/>
+<fullyQualifiedTypeName name="com.kumho.AllSeasonTire"/>
+<fullyQualifiedTypeName name="exam03.package1.A"/>
 </qualifiedTypeNameHistroy>
