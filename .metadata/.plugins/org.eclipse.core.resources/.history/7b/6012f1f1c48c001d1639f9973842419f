@@ -1,9 +1,0 @@
-
-public class Exercise3_3 {
-
-	public static void main(String[] args) {
-		int num = 9;
-		System.out.println(num == 0 ? 0 : num % 2 == 0 ? "짝수" : "음수");
-	}
-
-}
