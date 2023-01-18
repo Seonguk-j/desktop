@@ -13,4 +13,9 @@
 <fullyQualifiedTypeName name="SmartTelevision"/>
 <fullyQualifiedTypeName name="InterfaceCImpl"/>
 <fullyQualifiedTypeName name="java.awt.Robot"/>
+<fullyQualifiedTypeName name="pack1.A"/>
+<fullyQualifiedTypeName name="pack2.B"/>
+<fullyQualifiedTypeName name="Outer.Inner"/>
+<fullyQualifiedTypeName name="java.awt.event.WindowEvent"/>
+<fullyQualifiedTypeName name="java.awt.event.WindowAdapter"/>
 </qualifiedTypeNameHistroy>
