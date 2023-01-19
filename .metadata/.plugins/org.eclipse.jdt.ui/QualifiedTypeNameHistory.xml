@@ -18,4 +18,5 @@
 <fullyQualifiedTypeName name="Outer.Inner"/>
 <fullyQualifiedTypeName name="java.awt.event.WindowEvent"/>
 <fullyQualifiedTypeName name="java.awt.event.WindowAdapter"/>
+<fullyQualifiedTypeName name="InsufficientException"/>
 </qualifiedTypeNameHistroy>
