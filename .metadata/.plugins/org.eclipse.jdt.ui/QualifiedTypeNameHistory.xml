@@ -19,4 +19,6 @@
 <fullyQualifiedTypeName name="java.awt.event.WindowEvent"/>
 <fullyQualifiedTypeName name="java.awt.event.WindowAdapter"/>
 <fullyQualifiedTypeName name="InsufficientException"/>
+<fullyQualifiedTypeName name="java.util.HashSet"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>
