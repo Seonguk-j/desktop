@@ -32,7 +32,7 @@ public class HashSetExample {
 		set.remove("JDBC");
 		
 		//객체를 하나씩 가져와서 처리
-		for(String element : set) {
+		for(String element : set) {		//set 객체 하나를 element 요소에 대입
 			System.out.println(element);
 		}
 	}
